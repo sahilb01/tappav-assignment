@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Epson Home Cinema 2250 | TappAV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="logo">TappAV</div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Projectors</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="product-page container">
+        <div class="product-layout">
+<div class="product-images">
+    <img id="mainImage" class="main-image" src="images/projector-main.jpg" alt="Projector">
+
+    <div class="thumbnail-row">
+        <img src="images/projector-main.jpg" onclick="changeImage(this)">
+        <img src="images/projector-back.jpg" onclick="changeImage(this)">
+        <img src="images/projector-side.jpg" onclick="changeImage(this)">
+        <img src="images/remote.jpg" onclick="changeImage(this)">
+    </div>
+</div>
+
+
+
+            <div class="product-info">
+                <h1>Epson Home Cinema 2250</h1>
+                <p class="price">₹1,10,000</p>
+                <p style="color:green; font-weight:600;">In Stock • Free Delivery</p>
+
+                <ul>
+                    <li>Full HD 1080p Resolution</li>
+                    <li>2700 Lumens Brightness</li>
+                    <li>Built-in Android TV</li>
+                    <li>3LCD Technology</li>
+                </ul>
+
+                <button class="btn">Add to Cart</button>
+
+                <h3>Description</h3>
+                <p>
+                    The Epson Home Cinema 2250 delivers stunning Full HD clarity with vibrant colors and immersive
+                    brightness.
+                    Perfect for movies, gaming, and sports in your living room.
+                </p>
+                <h3>Specifications</h3>
+                <table class="specs">
+                    <tr>
+                        <td>Resolution</td>
+                        <td>1920 x 1080 (Full HD)</td>
+                    </tr>
+                    <tr>
+                        <td>Brightness</td>
+                        <td>2700 Lumens</td>
+                    </tr>
+                    <tr>
+                        <td>Technology</td>
+                        <td>3LCD</td>
+                    </tr>
+                    <tr>
+                        <td>Connectivity</td>
+                        <td>HDMI, USB, Wireless</td>
+                    </tr>
+                </table>
+                <section class="reviews">
+                </section>
+                <h3>Customer Reviews</h3>
+                <div class="review">
+                  <strong>Rohit S.</strong>
+                  <p>Excellent brightness and clarity. Perfect for my living room.</p>
+                </div>
+                <div class="review">
+                  <strong>Priya M.</strong>
+                  <p>Easy setup and great Android TV integration.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 TappAV. All rights reserved.</p>
+        </div>
+    </footer>
+<script>
+function changeImage(element) {
+  document.getElementById("mainImage").src = element.src;
+
+  let thumbnails = document.querySelectorAll(".thumbnail-row img");
+  thumbnails.forEach(img => img.style.border = "2px solid transparent");
+
+  element.style.border = "2px solid black";
+}
+</script>
+
+
+</body>
+
+</html>
