@@ -277,6 +277,15 @@ footer {
     max-width: 100%;
   }
 }
+
+.hero-btn {
+  background: #d4af37;
+  color: #000;   /* premium blue */
+}
+
+.hero-btn:hover {
+  background: #b8962e;
+}
 body {
   animation: fadeIn 0.6s ease-in-out;
 }
