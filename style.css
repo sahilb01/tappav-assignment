@@ -278,12 +278,12 @@ footer {
   }
 }
 
-.hero-btn {
+.btn.hero-btn {
   background: #d4af37;
   color: #000;   /* premium blue */
 }
 
-.hero-btn:hover {
+.btn.hero-btn:hover {
   background: #b8962e;
 }
 body {
