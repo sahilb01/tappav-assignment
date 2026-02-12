@@ -1,0 +1,302 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+.projector{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.product-info h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 25px;
+  color: #111;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  height: 90vh;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  background: #000;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* =========================
+   GRID SECTIONS
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   PRODUCT PAGE
+========================= */
+.product-page {
+  padding: 100px 0;
+}
+
+.product-layout {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.product-images {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Thumbnails */
+.thumbnail-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumbnail-row img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.thumbnail-row img:hover {
+  border: 2px solid #000;
+}
+
+/* RIGHT SIDE */
+.product-info {
+  flex: 1;
+}
+
+.product-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 15px 0 25px 0;
+}
+
+.product-info ul {
+  margin-bottom: 25px;
+}
+
+.product-info li {
+  margin-bottom: 8px;
+}
+
+/* Specs */
+.specs {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.specs td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.specs td:first-child {
+  font-weight: 600;
+  width: 40%;
+}
+
+/* Reviews */
+.review {
+  margin-top: 15px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #f5f5f5;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-layout {
+    flex-direction: column;
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+}
+body {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
+
