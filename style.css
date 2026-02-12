@@ -24,6 +24,19 @@ body {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+.product-highlight {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap; /* prevents overflow */
+}
+
+.product-highlight img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  display: block;
+}
 
 .container {
   width: 90%;
